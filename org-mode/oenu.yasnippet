@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# key: oenu
+# group: environments
+# name: Opgave enumerate
+# --
+
+\addcontentsline{toc}{${1:subsection}}{Delopgave $2}
+\begin{enumerate}[label=\alph*)]
+\setcounter{enumi}{$3}
+	\item $4
+\end{enumerate}
+
+$0

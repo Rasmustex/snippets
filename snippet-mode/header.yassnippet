@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# key: header
+# group: yasnippet editing
+# name: snippet header
+# --
+
+# -*- mode: snippet -*-
+# key: ${1:key}
+# group: ${2:group}
+# name: ${3:name}
+# condition: ${4:condition}
+# --
+$0

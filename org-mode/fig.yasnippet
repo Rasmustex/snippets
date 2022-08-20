@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: fig
+# group: environments
+# name: figure
+# --
+\begin{figure}[${1:htpb}]
+	\centering
+	${2:\includegraphics[width=0.8\textwidth]{figures/$3}}
+	\caption{${4:$3}}
+	\label{fig:${5:${3/\W+/-/g}}}
+\end{figure}
