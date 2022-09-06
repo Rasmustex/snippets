@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# key: hd
+# group: format
+# name: head
+# --
+
+#+TITLE: $1
+#+LANGUAGE: dk
+#+OPTIONS: date:${2:nil} toc:${3:nil} author:${4:nil}
+#+LATEX_HEADER_EXTRA: \pagestyle{fancy}
+#+LATEX_HEADER_EXTRA: \fancyhf{}
+#+LATEX_HEADER_EXTRA: \lhead{}
+#+LATEX_HEADER_EXTRA: \rhead{$1}
+#+LATEX_HEADER_EXTRA: \rfoot{$5}
+
+\thispagestyle{empty}
+\setcounter{secnumdepth}{$6}
+
+$0
