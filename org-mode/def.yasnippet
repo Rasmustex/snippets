@@ -3,12 +3,13 @@
 # group: environments
 # name: definition
 # --
+\fake${1:sub}section{Definition: $2}\label{def:$3}
 \begin{center}
 	\noindent\fbox{
 		\parbox{0.95\textwidth}{
-			\textbf{Definition: ${1:name}}\\
+			\textbf{Definition: $2}\\
 
-            ${2:contents}
+            ${4:contents}
 		}
 	}
 \end{center}

@@ -6,14 +6,15 @@
 
 #+TITLE: $1
 #+LANGUAGE: dk
-#+OPTIONS: date:${2:nil} toc:${3:nil} author:${4:nil}
+#+OPTIONS: date:${2:nil} ${3:toc:nil} author:${4:nil}
 #+LATEX_HEADER_EXTRA: \pagestyle{fancy}
 #+LATEX_HEADER_EXTRA: \fancyhf{}
 #+LATEX_HEADER_EXTRA: \lhead{}
 #+LATEX_HEADER_EXTRA: \rhead{$1}
 #+LATEX_HEADER_EXTRA: \rfoot{$5}
+#+LATEX_HEADER_EXTRA: \input{~/Documents/emacstest/snippets/org-mode/helper}
 
 \thispagestyle{empty}
-\setcounter{secnumdepth}{$6}
+\newpage
 
 $0

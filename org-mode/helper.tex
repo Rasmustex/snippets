@@ -1,0 +1,24 @@
+\makeatletter
+\newcommand{\fakesection}[1]{%
+  % go to vertical mode and don't allow a page break here
+  \par\nopagebreak
+  % step up the counter
+  \refstepcounter{section}
+  % teach nameref the title
+  \def\@currentlabelname{#1}
+  % add to TOC
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}
+}
+\newcommand{\fakesubsection}[1]{%
+  \par\nopagebreak
+  \refstepcounter{subsection}
+  \def\@currentlabelname{#1}
+  \addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection}#1}
+}
+\newcommand{\fakesubsubsection}[1]{%
+  \par\nopagebreak
+  \refstepcounter{subsubsection}
+  \def\@currentlabelname{#1}
+  \addcontentsline{toc}{subsubsection}{\protect\numberline{\thesubsubsection}#1}
+}
+\makeatother

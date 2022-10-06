@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# key: thm
+# group: environments
+# name: theorem
+# --
+\fake${1:sub}section{Sætning $2}\label{thm:$2}
+\begin{center}
+	\noindent\fbox{
+		\parbox{0.95\textwidth}{
+			\textbf{Sætning $2}\\
+
+            ${3:contents}
+		}
+	}
+\end{center}
+$0
